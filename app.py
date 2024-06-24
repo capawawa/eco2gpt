@@ -27,6 +27,11 @@ def get_ecowit_data():
     data = fetch_ecowit_data(APPLICATION_KEY, API_KEY, MAC_ADDRESS)
     return jsonify(data)
 
+@app.route('/chatgpt_webhook', methods=['POST'])
+def chatgpt_webhook():
+    data = fetch_ecowit_data(APPLICATION_KEY, API_KEY, MAC_ADDRESS)
+    return jsonify(data)
+
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     print("Starting Flask server on port", port)
