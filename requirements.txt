@@ -12,7 +12,6 @@ dbus-python==1.2.18
 decorator==5.1.1
 Deprecated==1.2.14
 distro==1.7.0
-distro-info==1.1+ubuntu0.2
 docker==5.0.3
 docker-compose==1.29.2
 dockerpty==0.4.1
